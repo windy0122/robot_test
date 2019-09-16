@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.6.5 on win32)" generated="20190915 13:52:29.921" rpa="false">
+<suite id="s1" name="Test5条件判断" source="D:\robot\rf_test\test5条件判断.robot">
+<test id="s1-t1" name="条件判断">
+<kw name="Get Web Info" library="mylib3">
+<assign>
+<var>${html}</var>
+</assign>
+<msg timestamp="20190915 13:52:30.565" level="INFO">${html} = Sun Sep 15 00:23:01 UTC 2019
+</msg>
+<status status="PASS" starttime="20190915 13:52:30.530" endtime="20190915 13:52:30.565"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'2018' in $html</arg>
+<arg>log to console</arg>
+<arg>2018年的</arg>
+</arguments>
+<status status="PASS" starttime="20190915 13:52:30.565" endtime="20190915 13:52:30.570"></status>
+</kw>
+<status status="PASS" starttime="20190915 13:52:30.529" endtime="20190915 13:52:30.570" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20190915 13:52:29.922" endtime="20190915 13:52:30.571"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Test5条件判断">Test5条件判断</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
