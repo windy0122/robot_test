@@ -37,4 +37,5 @@ def delete_all_course():
 
 
 if __name__ == '__main__':
-    print(delete_all_course())
+    print(list_course())
+    # print(delete_all_course())
